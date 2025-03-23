@@ -1,0 +1,14 @@
+CIS 3120 Project Data
+
+API
+https://data.cityofnewyork.us/resource/5fn4-dr26.json?$query=SELECT%0A%20%20%60record_id%60%2C%0A%20%20%60certificate_number%60%2C%0A%20%20%60business_name%60%2C%0A%20%20%60violation_date%60%2C%0A%20%20%60industry%60%2C%0A%20%20%60borough%60%2C%0A%20%20%60charge%60%2C%0A%20%20%60charge_count%60%2C%0A%20%20%60outcome%60%2C%0A%20%20%60counts_settled%60%2C%0A%20%20%60counts_guilty%60%2C%0A%20%20%60counts_not_guilty%60%2C%0A%20%20%60building_number%60%2C%0A%20%20%60street%60%2C%0A%20%20%60street_2%60%2C%0A%20%20%60unit_type%60%2C%0A%20%20%60unit%60%2C%0A%20%20%60description%60%2C%0A%20%20%60city%60%2C%0A%20%20%60state%60%2C%0A%20%20%60zip%60%2C%0A%20%20%60longitude%60%2C%0A%20%20%60latitude%60%0AWHERE%0A%20%20%60violation_date%60%0A%20%20%20%20BETWEEN%20%222022-01-01T22%3A35%3A56%22%20%3A%3A%20floating_timestamp%0A%20%20%20%20AND%20%222024-11-24T23%3A45%3A00%22%20%3A%3A%20floating_timestamp%0AORDER%20BY%20%60violation_date%60%20DESC%20NULL%20LAST
+
+We're limiting it to 50000 rows of data
+This should give us all charges from between 2022 & 2024 (current)
+
+API Webpage
+https://data.cityofnewyork.us/Business/Department-of-Consumer-and-Worker-Protection-DCWP-/5fn4-dr26/about_data
+
+The department of consumer and worker protection(DCWP) records several kinds violations and compliance needs charged against businesses and properties. This information is kept in order to help maintain compliance and benefit the public in terms of safety and fiduciary relations.
+My project's purpose is to transform and clean data from 2022 to 2024. The main usage of this data should be to allow auditors to visualize patterns in summary and over time. It should also facilitate categorizations by various nominal data types. Additionally, the data can be useable for location based analysis via zip codes and longitudes & latitudes.
+Ultimately, this may help guide the initial stages of where the DCWP should focus on.
