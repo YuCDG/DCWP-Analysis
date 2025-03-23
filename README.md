@@ -14,11 +14,11 @@ Alternatively if you've been given the config.py file, which contains the APP_KE
 # Code Instruction
 For starters create a folder to download the follow folder & file into:<br>
 dfclasses<br>Main_Code<br>nyczones.shp<br>
-![image](https://github.com/user-attachments/assets/924cd916-c12d-42fb-a594-1137970646cc)
+
 
 
 Once you've created your APP key on NYCOpenData, you can copy and paste the string value into the **APP_TOKEN** variable within **Data Retrieval** section. The rest of the code should all be run from top to bottom, in that order.<br>
-![image](https://github.com/user-attachments/assets/5648cffb-e3b6-4565-9cc8-495f6c0e89c0)
+
 
 <br><br>
 
