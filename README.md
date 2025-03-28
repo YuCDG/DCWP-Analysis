@@ -5,6 +5,11 @@ My project's purpose is to transform and clean data from 2022 to 2024 for NY. Th
 
 Ultimately, this can help determine where the DCWP should focus and what kinds of violations take the most precedent.
 
+# Discovery & Suggestions
+The most prominent businesses that stand up in terms of charges is the e-cig & tobacco retailers, alongside  Secondhand dealerships for cars. The tobacco and e-cig violation counts stood out in 2022 but, we reason that this might be due to the Clean Indoor Air Act(CIAA). During which there were stronger regulations against flavored tobacco products.
+<br>
+On the other hand, the Secondhand Dealerships had high legal charges in 2022 that were concentrated in Brooklyn and Queens. This saturation didn't carry over to 2023 but, it does mean that the DCWP may wish to keep that industry on a shorter leash moving forward.
+
 # APP_KEY Generation
 URL: https://data.cityofnewyork.us/
 <br> Above is the link to which you can create a free account. You must then navigate to your profile and to developer options. There you will be able to generate an APP key that you can paste into *APP_TOKEN* variable.
@@ -15,10 +20,7 @@ Alternatively if you've been given the config.py file, which contains the APP_KE
 For starters create a folder to download the follow folder & file into:<br>
 dfclasses<br>Main_Code<br>nyczones.shp<br>
 
-
-
 Once you've created your APP key on NYCOpenData, you can copy and paste the string value into the **APP_TOKEN** variable within **Data Retrieval** section. The rest of the code should all be run from top to bottom, in that order.<br>
-
 
 <br><br>
 
@@ -37,6 +39,17 @@ Record ID | Certificate Number | Business Name | Industry | Borough | City | Sta
 Building Number | Unit Type | Unit | Street | Street 2 | Description | Charge | Outcome | <br>
 **Numerical**<br>
 Violation Date | Charge Count | Counts Settled | Counts Guilty | Counts Not Guilty | Longitude | Latitude
+
+# Graphs
+## Second Hand Dealerships
+![image](https://github.com/user-attachments/assets/7ed38e41-922e-4058-ba5c-99d9c9896f63) 
+In this geograph, the violations for second hand auto dealerships are plotted. We see that despite the outstanding number of charges, the locations are more specific.
+<br>
+## Tobacco & E-Cig Retailers
+![image](https://github.com/user-attachments/assets/17d4393c-1d0d-4142-bec2-aab9ec5f9046)
+In this geograph, we see a very spread out plotting of enforcement violations for the tobacco/ e-cig retailer industry. This is more reasonable and lends credability to the theory that the spike in violation was due to the new 2022 enforcement for flavored tobacco.
+
+
 
 
 
